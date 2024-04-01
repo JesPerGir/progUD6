@@ -12,8 +12,9 @@ import java.util.*;
 
 public class Cluedo {
 	List listaJugadores = new ArrayList<>();
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		String arrayPersonajes[] = {"Amapola","Celeste","Prado","Mora","Rubio","Blanco"};
 		String arrayArmas[] = {"Bate","Pistola","Candelabro","Cuchillo","Cuerda","Hacha","Pesa","Veneno","Trofeo"};
 		String arrayLugares[] = {"Casa de invitados","Teatro","Spa","Observatorio","Terraza","Salón","Cocina","Vestíbulo"};
@@ -52,7 +53,7 @@ public static void MostrarArrays(String array[]) {
 public static void PreguntarSobreIncluir() {
 	Scanner sc = new Scanner(System.in);
 	String respuesta="";
-	int opcion=0;
+	int opcion=0, inclusiones;
 		do {
 			try {
 				System.out.println("¿Deseas añadir algo más a alguna de las listas mostradas? Responde (Sí/No):");
@@ -80,20 +81,70 @@ public static void PreguntarSobreIncluir() {
 				}
 			}while(opcion<0 || opcion>4);
 			
-			switch(opcion) {
-			case 1: 
-			case 2:
-			case 3:
-			case 4:
-			}
-		
-	}else {
+			sc.close();	
+	}else{
 		System.out.println("¡Genial, sigamos!");
-	}
+		}
 }
 
-public static void IncluirEnArrays() {
+public static String[] CrearNuevoArray(String[] array, int inclusiones) {
+	String nuevoArray[] = new String[array.length+inclusiones];
+	for(int i=0; i<array.length; i++) {
+		nuevoArray[i]=array[i];
+	}
+	return nuevoArray;
+}
+
+public static int NumeroDeInclusiones() {
+	Scanner sc = new Scanner(System.in);
+	int inclusiones=0;
+	System.out.println("¿Cúantos quieres añadir?");
+	do {
+		try {
+			inclusiones = sc.nextInt();
+		}catch(Exception ex) {
+			System.out.println("Ese no es un valor válido.");
+		}
+	}while(inclusiones<1);
+	sc.close();
+	return inclusiones;
+}
+
+public static void PreguntarInclusiones(String[] array, int repeticiones) {
+	Scanner sc = new Scanner(System.in);
+	String inclusion;
+	do {
+		try {
+			System.out.println("Introduce lo que quieras incluir en la lista:");
+			inclusion = sc.next();
+		}catch(Exception ex) {
+			System.out.println("Ese no es un valor válido");
+		}
+		
+		repeticiones--;
+	}while(repeticiones<0);
 	
+}
+
+public static void IncluirEnArray(int opcion, String[] arrayPersonajes, String[] arrayArmas, String[] arrayLugares) {
+	int inclusiones;
+	switch(opcion) {
+		case 1:
+			inclusiones=NumeroDeInclusiones();
+			CrearNuevoArray(arrayPersonajes, inclusiones);
+			break;
+		case 2:
+			inclusiones=NumeroDeInclusiones();
+			CrearNuevoArray(arrayArmas, inclusiones);
+			break;
+		case 3:
+			inclusiones=NumeroDeInclusiones();
+			CrearNuevoArray(arrayLugares, inclusiones);
+			break;
+		case 4:
+			System.out.println("No se añadirá nada.");
+			break;
+	}
 }
 
 public void GuardarEnFichero() throws Exception{
