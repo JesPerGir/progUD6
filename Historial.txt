@@ -1,0 +1,25 @@
+FECHA DE GENERACIÓN: 
+03-04-2024
+
+Jugador [nombre=Rubio, arma=Hacha, habitacion=Teatro, horaPartida=13:35]
+
+FECHA DE GENERACIÓN: 
+03-04-2024
+
+Jugador [nombre=Amapola, arma=Veneno, habitacion=Salón, horaPartida=13:35]
+
+FECHA DE GENERACIÓN: 
+03-04-2024
+
+Jugador [nombre=Celeste, arma=Candelabro, habitacion=Spa, horaPartida=13:35]
+
+FECHA DE GENERACIÓN: 
+03-04-2024
+
+Jugador [nombre=Celeste, arma=Pistola, habitacion=Observatorio, horaPartida=13:35]
+
+FECHA DE GENERACIÓN: 
+03-04-2024
+
+Jugador [nombre=Mora, arma=Cuchillo, habitacion=Casa de invitados, horaPartida=13:35]
+
