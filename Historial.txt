@@ -1,25 +1,23 @@
 FECHA DE GENERACIÓN: 
-03-04-2024
+04-04-2024
 
-Jugador [nombre=Rubio, arma=Hacha, habitacion=Teatro, horaPartida=13:35]
+Jugador [nombre=Prado, arma=Pistola, habitacion=Teatro, horaPartida=12:02]
 
-FECHA DE GENERACIÓN: 
-03-04-2024
+Jugador [nombre=Íker, arma=Cuerda, habitacion=Zaguán, horaPartida=12:02]
 
-Jugador [nombre=Amapola, arma=Veneno, habitacion=Salón, horaPartida=13:35]
+Jugador [nombre=Pedro, arma=Pesa, habitacion=Spa, horaPartida=12:02]
 
-FECHA DE GENERACIÓN: 
-03-04-2024
-
-Jugador [nombre=Celeste, arma=Candelabro, habitacion=Spa, horaPartida=13:35]
+Jugador [nombre=Pedro, arma=Cuerda, habitacion=Teatro, horaPartida=12:02]
 
 FECHA DE GENERACIÓN: 
-03-04-2024
+04-04-2024
 
-Jugador [nombre=Celeste, arma=Pistola, habitacion=Observatorio, horaPartida=13:35]
+Jugador [nombre=Rubio, arma=Hacha, habitacion=Observatorio, horaPartida=12:04]
+
+Jugador [nombre=Celeste, arma=Candelabro, habitacion=Terraza, horaPartida=12:04]
 
 FECHA DE GENERACIÓN: 
-03-04-2024
+04-04-2024
 
-Jugador [nombre=Mora, arma=Cuchillo, habitacion=Casa de invitados, horaPartida=13:35]
+Jugador [nombre=Mora, arma=Cuchillo, habitacion=Salón, horaPartida=12:14]
 
